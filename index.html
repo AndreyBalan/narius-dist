@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Main Page | Narius</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="description" content="" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240414140252" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://www.google.com/recaptcha/api.js?_v=20240414140252"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="form-message" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+							<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__text">Form successfully submitted!</div>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="logo header__logo">
+						<img src="img/logo.svg" alt="Logo" />
+					</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="index.html" class="menu__link active">Home Page</a>
+							</li>
+							<li class="menu__item">
+								<a href="about.html" class="menu__link">About Us</a>
+							</li>
+							<li class="menu__item">
+								<a href="products.html" class="menu__link">Products & Services</a>
+							</li>
+							<li class="menu__item">
+								<a href="studies.html" class="menu__link">Case Studies</a>
+							</li>
+							<li class="menu__item">
+								<a href="contact.html" class="menu__link">Contact</a>
+							</li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu">
+						<span></span>
+						<span class="sr-only">Mobile menu</span>
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__wrapper">
+						<div class="hero__content">
+							<h1 class="hero__title">Welcome to NARIUS</h1>
+							<p class="hero__descr text">
+								A pioneering product IT company headquartered in Cyprus, at the
+								forefront of integrating artificial intelligence and GPT
+								technologies into business solutions. Our mission is to empower
+								your business through innovation, offering a suite of AI-driven
+								products and services tailored to meet the dynamic needs of the
+								digital landscape.
+							</p>
+							<div class="hero__links">
+								<a href="#" data-goto=".news">Latest news and product updates</a>
+								<a href="#" data-goto=".overview">Overview of key products and services</a>
+							</div>
+							<a href="contact.html" class="hero__btn">
+								Contact Us
+								<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 4.47C7.59 4.47 3.97 8.09 3.97 12.5C3.97 16.91 7.59 20.53 12 20.53C16.41 20.53 20.03 16.91 20.03 12.5C20.03 8.09 16.41 4.47 12 4.47ZM12 2.5C17.54 2.5 22 6.96 22 12.5C22 18.04 17.54 22.5 12 22.5C6.46 22.5 2 18.04 2 12.5C2 6.96 6.46 2.5 12 2.5ZM13.88 12.03L16 14.14V8.5H10.36L12.47 10.62L7.5 15.6L8.9 17" fill="white" />
+								</svg>
+							</a>
+						</div>
+						<div class="hero__img">
+							<img data-src="img/hero.webp" alt="Hero" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="partners">
+				<div class="partners__container">
+					<div class="partners__wrapper">
+						<h2 class="partners__title">Why Partner with NARIUS CO LTD?</h2>
+						<div class="partners-pagination"></div>
+						<div class="partners__arrows">
+							<button type="button" class="partners-swiper-button-prev swiper-button-prev">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.9999 11.0001V13.0001H7.99991L13.4999 18.5001L12.0799 19.9201L4.15991 12.0001L12.0799 4.08008L13.4999 5.50008L7.99991 11.0001H19.9999Z" fill="" />
+								</svg>
+								<span class="sr-only">Previous slide</span>
+							</button>
+							<button type="button" class="partners-swiper-button-next swiper-button-next">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4 11.0001V13.0001H16L10.5 18.5001L11.92 19.9201L19.84 12.0001L11.92 4.08008L10.5 5.50008L16 11.0001H4Z" fill="" />
+								</svg>
+								<span class="sr-only">Next slide</span>
+							</button>
+						</div>
+						<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+
+						<!-- Оболонка слайдера -->
+
+						<div class="partners-content__wrapper">
+							<div class="partners__slider swiper">
+								<!-- Частина слайдера, що рухається -->
+								<div class="partners-slider__wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="partners__slide swiper-slide">
+										<p>
+											Innovative Solutions: We specialize in creating
+											cutting-edge IT products for e-commerce, SEO
+											marketing, brand creation, algo trading, and chatbot
+											development. Our solutions leverage the latest in AI
+											and GPT technologies to provide you with a
+											competitive edge.
+										</p>
+									</div>
+									<!-- Слайд -->
+									<div class="partners__slide swiper-slide">
+										<p>
+											Customization at Its Core: Understanding that each
+											business is unique, we offer White Label and Turn
+											Key Solutions that can be customized to perfectly
+											align with your business goals and objectives,
+											ensuring that our products not only meet but exceed
+											your expectations.
+										</p>
+									</div>
+									<div class="partners__slide swiper-slide">
+										<p>
+											Expertise in AI and GPT: Our team is composed of
+											experts in the fields of artificial intelligence and
+											generative pre-trained transformers. This expertise
+											allows us to develop products that are not only
+											efficient but also capable of evolving with your
+											business needs.
+										</p>
+									</div>
+									<div class="partners__slide swiper-slide">
+										<p>
+											Global Reach, Local Touch: Though we are based in
+											Cyprus, our solutions are designed to cater to
+											businesses around the globe. We ensure that our
+											global reach is complemented by a local touch,
+											understanding and addressing the specific needs of
+											your market.
+										</p>
+									</div>
+									<div class="partners__slide swiper-slide">
+										<p>
+											Dedicated Support: At NARIUS CO LTD, we believe in
+											building lasting relationships with our clients. Our
+											dedicated support team is always ready to assist
+											you, ensuring that your experience with our products
+											and services is seamless and rewarding.
+										</p>
+									</div>
+								</div>
+								<button type="button" class="swiper-button-prev partners-button-prev">
+									<span class="sr-only">Previous slide</span>
+								</button>
+								<button type="button" class="swiper-button-next partners-button-next">
+									<span class="sr-only">Next slide</span>
+								</button>
+
+								<!-- Якщо потрібна пагінація -->
+
+								<!-- Якщо потрібен скролбар -->
+								<!-- <div class="swiper-scrollbar"></div> -->
+							</div>
+							<div class="partners-content__static">
+								By choosing NARIUS CO LTD, you are not just selecting a service
+								provider; you are partnering with a company that is committed to
+								driving your business forward. Let's embark on this journey of
+								transformation together, unlocking new possibilities and
+								achieving unprecedented success.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="news">
+				<div class="news__container">
+					<h2 class="news__title">Latest news and product updates</h2>
+					<div class="news__wrapper">
+						<div class="news__img">
+							<img data-src="img/news.webp" alt="News" />
+						</div>
+						<div class="news__content">
+							<!-- Оболонка слайдера -->
+							<div class="news__slider swiper">
+								<!-- Частина слайдера, що рухається -->
+								<div class="news-swiper-wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="news__slide swiper-slide">
+										<h3 class="news__subheading">
+											1. NARIUS CO LTD Launches Revolutionary AI-Driven
+											E-commerce Platform
+										</h3>
+										<p class="text">
+											March 15, 2024 - NARIUS CO LTD is excited to
+											announce the launch of its innovative AI-driven
+											e-commerce platform, designed to transform how
+											businesses manage their online stores. The platform
+											features advanced AI algorithms that automate
+											catalog creation, content management, and product
+											review generation, streamlining operations and
+											enhancing user engagement. This cutting-edge
+											solution is tailored for businesses looking to
+											leverage AI for e-commerce excellence, providing
+											tools for seamless product management and marketing.
+										</p>
+									</div>
+									<!-- Слайд -->
+									<div class="news__slide swiper-slide">
+										<h3 class="news__subheading">
+											2. Breakthrough in SEO Marketing: NARIUS CO LTD
+											Introduces AI-Powered Semantic Analysis Tool
+										</h3>
+										<p class="text">
+											April 1, 2024 - In a significant advancement for SEO
+											marketing, NARIUS CO LTD unveils its latest product:
+											an AI-powered Semantic Analysis Tool. This tool
+											revolutionizes how businesses approach SEO by
+											offering deep insights into search trends, keyword
+											effectiveness, and content optimization. Utilizing
+											state-of-the-art AI, it analyzes market semantics
+											and search volumes, enabling businesses to craft SEO
+											strategies that ensure top search engine rankings
+											and increased visibility.
+										</p>
+									</div>
+									<!-- Слайд -->
+									<div class="news__slide swiper-slide">
+										<h3 class="news__subheading">
+											3. NARIUS CO LTD Expands Its Chatbot Solutions with
+											Advanced Learning Capabilities
+										</h3>
+										<p class="text">
+											April 05, 2024 - NARIUS CO LTD is proud to expand
+											its range of chatbot solutions with the introduction
+											of advanced learning capabilities. The new feature
+											allows chatbots to learn and adapt from
+											interactions, ensuring more personalized and
+											effective communication with users. These
+											enhancements are part of NARIUS CO LTD's commitment
+											to leveraging AI for creating more dynamic and
+											responsive tools for businesses, enhancing customer
+											service and engagement across various industries.
+										</p>
+									</div>
+								</div>
+								<!-- Якщо потрібна пагінація -->
+
+								<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+
+								<div class="news__navigation">
+									<div class="news__pagination">
+										<div class="news-swiper-pagination swiper-pagination"></div>
+									</div>
+									<div class="news__arrows">
+										<button type="button" class="news-swiper-button-prev swiper-button-prev">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+												<path d="M19.9999 11.0001V13.0001H7.99991L13.4999 18.5001L12.0799 19.9201L4.15991 12.0001L12.0799 4.08008L13.4999 5.50008L7.99991 11.0001H19.9999Z" fill="" />
+											</svg>
+											<span class="sr-only">Previous slide</span>
+										</button>
+										<button type="button" class="news-swiper-button-next swiper-button-next">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+												<path d="M4 11.0001V13.0001H16L10.5 18.5001L11.92 19.9201L19.84 12.0001L11.92 4.08008L10.5 5.50008L16 11.0001H4Z" fill="" />
+											</svg>
+											<span class="sr-only">Next slide</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="news__static">
+								<p class="text">
+									These updates underscore NARIUS CO LTD's ongoing commitment
+									to innovation and its dedication to providing
+									state-of-the-art AI solutions that address the evolving
+									needs of businesses in the digitasl age.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="overview">
+				<div class="overview__container">
+					<h2 class="overview__title">Overview of key products and services</h2>
+					<div class="overview__wrapper">
+						<div class="overview__content">
+							<p class="text">
+								NARIUS CO LTD is at the vanguard of AI and GPT-technology
+								integration, offering a comprehensive suite of products and
+								services designed to propel businesses into the future of
+								digital commerce and online presence. Our key offerings leverage
+								advanced artificial intelligence to provide solutions that are
+								not just innovative but also tailor-made to fit the unique needs
+								of our clients across various industries. Here’s an overview of
+								our key products and services:
+							</p>
+						</div>
+						<div class="overview__img">
+							<img data-src="img/services.webp" alt="Services" />
+						</div>
+					</div>
+					<div class="overview-pagination"></div>
+					<div class="overview__arrows">
+						<button type="button" class="overview-swiper-button-prev swiper-button-prev">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19.9999 11.0001V13.0001H7.99991L13.4999 18.5001L12.0799 19.9201L4.15991 12.0001L12.0799 4.08008L13.4999 5.50008L7.99991 11.0001H19.9999Z" fill="" />
+							</svg>
+							<span class="sr-only">Previous slide</span>
+						</button>
+						<button type="button" class="overview-swiper-button-next swiper-button-next">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 11.0001V13.0001H16L10.5 18.5001L11.92 19.9201L19.84 12.0001L11.92 4.08008L10.5 5.50008L16 11.0001H4Z" fill="" />
+							</svg>
+							<span class="sr-only">Next slide</span>
+						</button>
+					</div>
+					<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+
+					<!-- Оболонка слайдера -->
+
+					<div class="overview-content__wrapper">
+						<div class="overview__slider swiper">
+							<!-- Частина слайдера, що рухається -->
+							<div class="overview-slider__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="overview__slide swiper-slide">
+									<p>
+										Our e-commerce suite is designed to revolutionize online
+										retail through AI-driven automation and customization.
+										From creating dynamic product catalogs that adapt to
+										market trends to generating engaging content and
+										insightful product reviews, our solutions are crafted to
+										enhance the online shopping experience and boost your
+										sales.
+									</p>
+								</div>
+								<!-- Слайд -->
+								<div class="overview__slide swiper-slide">
+									<p>
+										Climb the ranks in search engine results with our
+										AI-powered SEO marketing tools. By analyzing existing
+										semantics and search volumes, our products help create
+										optimized websites and content that increase visibility
+										and attract more traffic. These tools are essential for
+										businesses aiming to stand out in a crowded digital
+										marketplace.
+									</p>
+								</div>
+								<div class="overview__slide swiper-slide">
+									<p>
+										Make your mark with our Brand Creator service, which
+										utilizes AI to scout brand mentions and craft unique
+										brand names. This service is perfect for startups and
+										established businesses looking to rebrand, ensuring your
+										brand stands out and resonates well with your target
+										audience.
+									</p>
+								</div>
+								<div class="overview__slide swiper-slide">
+									<p>
+										Dive into the world of algorithmic trading with our Algo
+										Trading service. This platform offers automated trading
+										solutions on various exchanges, powered by AI to make
+										real-time decisions based on market analysis. It's
+										designed for traders looking for efficient, data-driven
+										strategies to maximize their returns.
+									</p>
+								</div>
+								<div class="overview__slide swiper-slide">
+									<p>
+										Elevate your customer service with our customizable
+										chatbots. These AI-driven chatbots learn and adapt from
+										each interaction, providing personalized customer
+										support and engagement. They are versatile tools for any
+										business looking to improve their customer interaction
+										and service availability around the clock.
+									</p>
+								</div>
+							</div>
+							<button type="button" class="swiper-button-prev overview-button-prev">
+								<span class="sr-only">Previous slide</span>
+							</button>
+							<button type="button" class="swiper-button-next overview-button-next">
+								<span class="sr-only">Next slide</span>
+							</button>
+
+							<!-- Якщо потрібна пагінація -->
+
+							<!-- Якщо потрібен скролбар -->
+							<!-- <div class="swiper-scrollbar"></div> -->
+						</div>
+						<div class="overview-content__static">
+							At NARIUS CO LTD, we are dedicated to pushing the boundaries of
+							what's possible with AI in the business world. Our products and
+							services are designed to provide you with the competitive edge you
+							need to succeed in today's fast-paced digital environment.
+							<a href="contact.html" class="overview__btn">
+								Contact Us
+								<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 4.47C7.59 4.47 3.97 8.09 3.97 12.5C3.97 16.91 7.59 20.53 12 20.53C16.41 20.53 20.03 16.91 20.03 12.5C20.03 8.09 16.41 4.47 12 4.47ZM12 2.5C17.54 2.5 22 6.96 22 12.5C22 18.04 17.54 22.5 12 22.5C6.46 22.5 2 18.04 2 12.5C2 6.96 6.46 2.5 12 2.5ZM13.88 12.03L16 14.14V8.5H10.36L12.47 10.62L7.5 15.6L8.9 17" fill="white"></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contact">
+				<div class="contact__container">
+					<h2 class="contact__title">Contact</h2>
+					<div class="contact__wrapper">
+						<div class="contact__form">
+							<p class="text">
+								If you are interested in partnering with us, leave your email and offer text -
+								and we will contact you!
+							</p>
+							<form class="contact__form" action="files/sendmail/sendmail.php" method="POST" data-popup-message="#form-message" data-ajax>
+								<div class="contact__form-group">
+									<label for="email" class="contact__label">Enter your e-mail</label>
+									<input type="email" id="email" class="contact__input" placeholder="ivan.ivanov@gmail.com" data-error="Incorrect email" data-required="email" />
+								</div>
+								<div class="contact__form-group">
+									<label for="topic" class="contact__label">Enter your topic</label>
+									<input type="text" id="topic" class="contact__input" placeholder="E-commerce Solutions" data-error="Incorrect topic" data-required />
+								</div>
+								<div class="contact__form-group">
+									<label for="offer" class="contact__label">Add your offer</label>
+									<textarea id="offer" class="contact__textarea" maxlength="200" placeholder="Commentary...." data-error="Please enter your commentary" data-required></textarea>
+								</div>
+								<div class="g-recaptcha" data-sitekey="YOUR_KEY"></div>
+								<button type="submit" class="contact__submit-btn form__btn">
+									Contact Us
+									<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 4.47C7.59 4.47 3.97 8.09 3.97 12.5C3.97 16.91 7.59 20.53 12 20.53C16.41 20.53 20.03 16.91 20.03 12.5C20.03 8.09 16.41 4.47 12 4.47ZM12 2.5C17.54 2.5 22 6.96 22 12.5C22 18.04 17.54 22.5 12 22.5C6.46 22.5 2 18.04 2 12.5C2 6.96 6.46 2.5 12 2.5ZM13.88 12.03L16 14.14V8.5H10.36L12.47 10.62L7.5 15.6L8.9 17" fill="white"></path>
+									</svg>
+								</button>
+							</form>
+						</div>
+						<div class="contact__img">
+							<img data-src="img/contact.webp" alt="Contact" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__wrapper">
+					<div class="footer__content">
+						<div class="footer__logo">
+							<img src="img/logo.svg" alt="Logo" />
+						</div>
+						<div class="footer__menu">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="index.html" class="footer__link active">Home Page</a>
+								</li>
+								<li class="footer__item">
+									<a href="about.html" class="footer__link">About Us</a>
+								</li>
+								<li class="footer__item">
+									<a href="products.html" class="footer__link">Products & Services</a>
+								</li>
+								<li class="footer__item">
+									<a href="studies.html" class="footer__link">Case Studies</a>
+								</li>
+								<li class="footer__item">
+									<a href="contact.html" class="footer__link">Contact</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__contacts">
+							<h3 class="footer__address">
+								Vasili Michailidi, 9 <br />
+								3026, Limassol, Cyprus
+							</h3>
+							<a href="tel:4345464356" class="footer__phone">(434) 546-4356</a>
+							<a href="mailto:info@narius.tech" class="footer__email">info@narius.tech</a>
+						</div>
+					</div>
+					<div class="footer__map">
+						<iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.9106056913465!2d33.040163177092154!3d34.68220558420258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e7330f9be5a0f1%3A0x7e32723315192e6e!2sGlobalserve%20Business%20Centre%2C%20Vasili%20Michaelidi%209%2C%20Limassol%203026%2C%20%D0%9A%D0%B8%D0%BF%D1%80!5e0!3m2!1sru!2sua!4v1712811973146!5m2!1sru!2sua" width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy" title="Our address" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				&copy;
+				<script>
+					document.write(new Date().getFullYear());
+				</script>
+				Procidus
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js?_v=20240414140252"></script>
+</body>
+
+</html>
